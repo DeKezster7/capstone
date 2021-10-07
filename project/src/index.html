@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+    <style>
+        #interconnectionsMap {
+            max-height: 540px;
+            height: 450px;
+        }
+    </style>
+    <script type="text/javascript" src="./App.js"></script>
+</head>
+
+<body>
+
+    <h1>Representation of Internet Interconnections</h1>
+    <div>
+        <button id="ASNs">ASNs</button>
+    </div>
+    <div id="interconnectionsMap"></div>
+        <script>
+            const mymap = L.map('interconnectionsMap').setView([-1.014845, 18.024018], 3);
+            const attribution =
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+            const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            const tiles = L.tileLayer(tileUrl, { attribution });
+            tiles.addTo(mymap);
+
+            
+            /*document.getElementById("ASNs").addEventListener("click", function () {
+                var asnGeoJson = obtainGeoJson();
+                console.log(asnGeoJson);
+                L.geoJSON(asnGeoJson).addTo(mymap);
+            });*/
+            /*//Create map and tiles.
+            /*
+            * set default center of the map
+            * The lat and lng of Bikoro, DRC  was found to be the best center position with
+            * preset zoom of 3 which is able to visualise the whole of Africa.
+            * Testing this was done using a combination of codesandbox.io and Google Maps.
+            *//*
+            const africamap = L.map("interconnectionsMap").setView([-1.014845, 18.024018], 3);
+            // use openstreet to visualise the map.
+            const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+            const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            const tiles = L.tileLayer(tileUrl, { attribution });
+            tiles.addTo(africamap);
+
+            document.getElementById("ASNs").addEventListener("click", function () {
+                var asnGeoJson = obtainGeoJson();
+                L.geoJSON(asnGeoJson).addTo(africamap);
+            });*/
+        </script>
+</body>
+</html>

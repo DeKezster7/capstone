@@ -1,0 +1,58 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "University of Cape Town",
+        "popupContent": "Top Uni in Africa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 18.4524658, -33.9576517 ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 28.0282846, -26.1928788 ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 31.0524554, -17.7823881 ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 31.2064967, 30.0271762 ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 36.813756, -1.2794933 ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [ 18.4524658, -33.9576517 ],
+          [ 28.0282846, -26.1928788 ]
+        ]
+      }
+    }
+  ]
+}
